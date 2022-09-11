@@ -1,5 +1,5 @@
 crintab -e
 01 00 * * *        /var/www/html/all-statistics.sh  #execute each our always.
 01 00 * * *        /var/www/html/avg.sh
-
+01 00 * * *        cat /proc/meminfo >>/var/www/html/cpu.html 
 crontab -l to show .
