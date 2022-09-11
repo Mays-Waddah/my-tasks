@@ -1,0 +1,5 @@
+crintab -e
+01 00 * * *        /var/www/html/all-statistics.sh  #execute each our always.
+01 00 * * *        /var/www/html/avg.sh
+
+crontab -l to show .
