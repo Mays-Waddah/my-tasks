@@ -1,7 +1,28 @@
+#!/bin/bash
+{
+echo `<html>`;
+echo `<body>`;
 
-<a href="/cpu.html">cpu</a>
+echo `<table style="width:100%">`;
+ echo `<tr>`; 
+  
+  echo `<th>`; CPU echo `</th>`;
+    echo`<th>`; MEMORY echo`</th>`;
+   echo `<th>`; DISK-USG echo `</th> `;
+ echo `</th>`;
 
-<a href="/disk.html">disk</a>
+  echo `</tr>`;
+  echo `<tr>`;
+   echo `<td>`; <a href="/cpu.html">cpu</a>        echo `</td>`;
+     echo `<td>`; <a href="/memory.html">memory</a>   echo `</td>`;
+     echo `<td>`;  <a href="/disk.html">disk</a>       echo `</td>`;
+ echo  `</tr>`;
+  
+ 
+ echo `</table>`;
+ 
 
 
-<a href="/memory.html">memory</a>
+ echo `</body>`;
+ echo `</html>`;
+}
