@@ -1,30 +1,29 @@
 #!/bin/bash
-
+cat << -EOF
 echo -e "  
-<html>\n
-<style>\n
+<html>
+<style>
 
-<body>\n
+<body>
 
 
 
-<table style="width:100%">\n
-  <tr>\n
-    <th>\n CPU </th>\n
-    <th>\n MEMORY </th>\n
-    <th>\n DISK-USG </th>\n
-</th>\n
-
-  </tr>\n
-  <tr>\n
-    <td>\n <a href="/cpu.html">cpu</a>        </td>\n
-    <td>\n <a href="/memory.html">memory</a>  </td>\n
-    <td>\n <a href="/disk.html">disk</a>      </td>\n
-  </tr>\n
+<table style="width:100%">
+  <tr>
+    <th> CPU </th>
+    <th> MEMORY </th>
+    <th> DISK-USG </th>
+</th>
+  </tr>
+  <tr>
+    <td> <a href="/cpu.html">cpu</a>        </td>
+    <td> <a href="/memory.html">memory</a>  </td>
+    <td> <a href="/disk.html">disk</a>      </td>
+  </tr>
   
  
-</table>\n
+</table>
 
 
-</body>\n
-</html> \n " >> index.html
+</body>
+</html> EOF >> index.html
