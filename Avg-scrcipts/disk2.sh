@@ -5,7 +5,7 @@ total=0;
 
 for i in $( awk '{ print $2; }' disk-avg.txt )
    do 
-     total=$(echo $total+$i | bc )
+     total=$(echo $total+$i )
      ((count++))
    done
-echo "Average of disk is : $total / $count" | bc " >>disk.html
+echo "Average of disk is : $total / $count" | bc " >> disk.html
