@@ -1,1 +1,1 @@
-
+#only values I am willing to find their average are stored here
