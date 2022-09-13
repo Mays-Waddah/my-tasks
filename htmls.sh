@@ -3,7 +3,9 @@
 echo "CPU Usage : "  >> cpu.html 
 echo " "    >> cpu.html 
 top | grep %Cpu  >> cpu.html 
+#here i added info to show and for each hour another value is stored in the link/index
 echo " " >> cpu.html > /dev/null
+#and after showing data i am showing the average so i stored the numeric value in another file to process it
 vmstat | awk '{print $6} '  >>cpu-avg.txt
 
 
