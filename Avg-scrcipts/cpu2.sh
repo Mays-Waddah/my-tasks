@@ -8,4 +8,4 @@ for i in $( awk '{ print $2; }' cpu-avg.txt )
      total=$(echo $total+$i | bc )
      ((count++))
    done
-echo "Average of cpu is : $total / $count" | bc "
+echo "Average of cpu is : $total / $count" | bc " >> cpu.html
